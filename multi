@@ -1,15 +1,129 @@
 <!DOCTYPE html>
 <html>
-<body>
-<canvas id="palestine" width="1136" height="640">
-Free Palestine </canvas>
-<script>
-  var myCanvas=document.getElementById("palestine");
-  var myctx=myCanvas.getContext("2d);
-  var flag=new Image();
-  israel.src="images/israel.png";
-  var y=0;
-  
-</script>
-</body>
+
+	<body>
+    	<canvas id="sharenaCanvas" width="770" height="770" style="background-color:slateBlue ;"></canvas>
+        
+        <script>
+        	var canvas = document.getElementById('sharenaCanvas');
+            var ctx = canvas.getContext('2d');
+            function draw (){
+            var ctx = document.getElementById('sharenaCanvas').getContext('2d');
+            
+            //name
+            //letter'S'
+            ctx.fillStyle = "#AED6F1";
+            ctx.fillRect(50,140,60,10);
+            ctx.fillRect(50,180,60,10);
+            ctx.fillRect(50,140,10,50);
+            ctx.fillRect(100,180,10,50);
+            ctx.fillRect(50,220,60,10);
+            //letter 'H'
+            ctx.fillStyle = "#AED6F1";
+            ctx.fillRect(150,180,50,10);
+            ctx.fillRect(150,140,10,90);
+            ctx.fillRect(200,140,10,90);
+            //letter 'A'
+            ctx.fillStyle = "#AED6F1";
+            ctx.fillRect(250,140,50,10);
+            ctx.fillRect(250,180,50,10);
+            ctx.fillRect(250,140,10,90);
+            ctx.fillRect(300,140,10,90);
+            //letter 'r'
+            ctx.fillStyle = "#AED6F1";
+            ctx.fillRect(350,180,10,50);
+            ctx.fillRect(350,180,60,10);
+            //letter 'E'
+            ctx.fillStyle = "#AED6F1";
+            ctx.fillRect(450,140,50,10);
+            ctx.fillRect(450,180,50,10);
+            ctx.fillRect(450,140,10,90);
+            ctx.fillRect(450,220,50,10);
+            //letter 'n'
+            ctx.fillStyle = "#AED6F1";
+            ctx.fillRect(550,180,10,50);
+            ctx.fillRect(550,180,60,10);
+            ctx.fillRect(600,180,10,50);
+            //letter 'A'
+            ctx.fillStyle = "#AED6F1";
+            ctx.fillRect(650,140,50,10);
+            ctx.fillRect(650,180,50,10);
+            ctx.fillRect(650,140,10,90);
+            ctx.fillRect(700,140,10,90);
+            
+            //matric no
+            //number '1'
+            ctx.fillStyle = "#FA6060";
+            ctx.fillRect(100,340,10,90);
+            //number '7'
+            ctx.fillStyle = "#FB9B17";
+            ctx.fillRect(150,340,50,10);
+            ctx.fillRect(200,340,10,90);
+            //number '2'
+           	ctx.fillStyle = "#F9F456";
+            ctx.fillRect(250,340,60,10);
+            ctx.fillRect(250,380,60,10);
+            ctx.fillRect(300,340,10,50);
+            ctx.fillRect(250,380,10,50);
+            ctx.fillRect(250,420,60,10);
+            //number '2'
+           	ctx.fillStyle = "#CB56F9";
+            ctx.fillRect(350,340,60,10);
+            ctx.fillRect(350,380,60,10);
+            ctx.fillRect(400,340,10,50);
+            ctx.fillRect(350,380,10,50);
+            ctx.fillRect(350,420,60,10);
+            //number '8'
+            ctx.fillStyle = "#70F573";
+            ctx.fillRect(450,340,60,10);
+            ctx.fillRect(450,380,50,10);
+            ctx.fillRect(450,340,10,90);
+            ctx.fillRect(450,420,50,10);
+            ctx.fillRect(500,340,10,90);
+            //number '5'
+            ctx.fillStyle = "#FB9B17";
+            ctx.fillRect(550,340,60,10);
+            ctx.fillRect(550,380,60,10);
+            ctx.fillRect(550,340,10,50);
+            ctx.fillRect(600,380,10,50);
+            ctx.fillRect(550,420,60,10);
+            //number '4'
+            ctx.fillStyle = "#FA6060";
+            ctx.fillRect(650,380,50,10);
+            ctx.fillRect(650,340,10,40);
+            ctx.fillRect(700,340,10,90);
+
+           //shapes
+            ctx.beginPath();
+            ctx.arc(360,650,120,0,Math.PI,true);
+           
+            ctx.moveTo(240,650);
+            ctx.lineTo(480,650);
+            
+            ctx.moveTo(360,650);
+            ctx.lineTo(380,650);
+            ctx.lineTo(360,650);
+            ctx.closePath();
+            
+            ctx.moveTo(300,550);
+            ctx.bezierCurveTo(240,450,200,550,290,555);
+            
+            ctx.moveTo(430,550);
+            ctx.bezierCurveTo(480,450,550,550,440,565);
+            ctx.lineWidth=6;
+			ctx.strokeStyle='#FADBDB';
+      		ctx.stroke();
+      		ctx.fillStyle='#211302'; 
+      		ctx.fill();
+
+            ctx.arc(320,630,20,0,Math.PI*2);
+           	ctx.arc(400,630,20,0,Math.PI*2);
+            ctx.stroke();
+        
+            }
+            window.onload=draw;
+    
+            </script>
+
+	</body>
 </html>
