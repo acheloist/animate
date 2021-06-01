@@ -1,5 +1,6 @@
 <html>
-hello
-can u see me
-
-yes boo
+<canvas id="palestine" width="1136" height="640">
+Free Palestine </canvas>
+<script>
+  var myCanvas=document.getElementById("palestine")
+  
