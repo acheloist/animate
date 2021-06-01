@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html>
+<body>
 <canvas id="palestine" width="1136" height="640">
 Free Palestine </canvas>
 <script>
@@ -9,3 +11,5 @@ Free Palestine </canvas>
   var y=0;
   
 </script>
+</body>
+</html>
