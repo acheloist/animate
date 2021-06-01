@@ -2,5 +2,9 @@
 <canvas id="palestine" width="1136" height="640">
 Free Palestine </canvas>
 <script>
-  var myCanvas=document.getElementById("palestine")
+  var myCanvas=document.getElementById("palestine");
+  var myctx=myCanvas.getContext("2d);
+  var flag=new Image();
+  israel.src="images/israel.png";
+  var y=0;
   
